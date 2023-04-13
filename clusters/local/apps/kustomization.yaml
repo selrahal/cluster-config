@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
 - helm-chart-repository
+- testnamespace/namespace.yaml
