@@ -8,5 +8,6 @@ resources:
 - route.yaml
 - project-helm-chart-repository.yaml
 - namespace.yaml
+- bc.yaml
 
 namespace: helmchart3
