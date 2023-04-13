@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - ../../../../base/gitops-operator
 
-namespace: openshift-gitops
+namespace: openshift-gitops3
