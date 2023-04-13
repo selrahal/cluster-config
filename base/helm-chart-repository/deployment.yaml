@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helm-chart-repo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helm-chart-repo
+  template:
+    metadata:
+      name: helm-chart-repo
+      labels:
+        app: helm-chart-repo
+    spec:
+      containers:
+        - image: helm-repo-container
+          name: helm-repo-container
+          securityContext:
+            capabilities:
+              drop:
+                - "ALL"
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            seccompProfile:
+              type: "RuntimeDefault"
+          ports:
+            - containerPort: 8080
+              name: http
+

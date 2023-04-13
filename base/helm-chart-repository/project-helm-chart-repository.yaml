@@ -1,0 +1,8 @@
+apiVersion: helm.openshift.io/v1beta1
+kind: ProjectHelmChartRepository
+metadata:
+  name: helm-chart-repository
+spec:
+  connectionConfig:
+    url: http://heml-repo-route-helmchart.apps-crc.testing/
+  name: Test Helm Chart Repository
