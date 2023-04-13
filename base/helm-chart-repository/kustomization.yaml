@@ -7,3 +7,5 @@ resources:
 - service.yaml
 - route.yaml
 - project-helm-chart-repository.yaml
+
+namespace: helmchart
