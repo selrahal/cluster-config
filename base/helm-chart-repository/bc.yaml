@@ -1,0 +1,19 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: helm-repo-container
+spec:
+  output:
+    to:
+      kind: 'ImageStreamTag'
+      name: 'helm-repo-container:latest'
+  source:
+    binary: {}
+    type: binary
+  strategy:
+    dockerStrategy:
+      from:
+        kind: "DockerImage"
+        name: "registry.access.redhat.com/ubi8/httpd-24"
+  triggers:
+    - type: ConfigChange
