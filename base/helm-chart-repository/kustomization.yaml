@@ -9,4 +9,4 @@ resources:
 - project-helm-chart-repository.yaml
 - namespace.yaml
 
-namespace: helmchart
+namespace: helmchart2
