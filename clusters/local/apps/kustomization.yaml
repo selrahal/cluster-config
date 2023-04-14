@@ -3,4 +3,5 @@ kind: Kustomization
 
 resources:
 - helm-chart-repository
+- app-argocd
 - testnamespace/namespace.yaml
