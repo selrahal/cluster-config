@@ -9,3 +9,6 @@ spec:
       tls:
         insecureEdgeTerminationPolicy: Redirect
         termination: reencrypt
+  sso:
+    dex:
+      openShiftOAuth: true
