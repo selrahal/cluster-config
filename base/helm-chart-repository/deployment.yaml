@@ -14,7 +14,7 @@ spec:
         app: helm-chart-repo
     spec:
       containers:
-        - image: helm-repo-container
+        - image: image-registry.openshift-image-registry.svc:5000/helmchart3/helm-repo-container@sha256:501a0117ac066983d79a8b13ed193eefa31e397a84c2a85bfcbb4e58bbed001f
           name: helm-repo-container
           securityContext:
             capabilities:
