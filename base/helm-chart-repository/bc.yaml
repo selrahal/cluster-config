@@ -9,7 +9,7 @@ spec:
       name: 'helm-repo-container:latest'
   source:
     binary: {}
-    type: binary
+    type: Binary
   strategy:
     dockerStrategy:
       from:
